@@ -1,4 +1,4 @@
-const baseUrl = '../db.json';
+const baseUrl = './db.json';
 
 export const getAllData = async () => {
   try {
