@@ -10,7 +10,7 @@
 
   --clr-neutral-very-dark-blue: hsl(226, 43%, 10%);
   --clr-neutral-dark-blue: hsl(236, 45%, 20%);
-  --clr-neutral-desaturated-blue: hsl(235, 45%, 61%);
+  --clr-neutral-desaturated-blue: hsl(236, 41%, 34%);
   --clr-neutral-pale-blue: hsl(236, 100%, 87%);
 
   --ff-base: 'Rubik', sans-serif;
@@ -28,11 +28,6 @@
   --fs-L-mobile: calc(24rem / 16);
   --fs-M-mobile: calc(18rem / 16);
   --fs-S-mobile: calc(15rem / 16);
-}
-
-/* utility styles */
-.active {
-  color: white !important;
 }
 
 /* App styles */
@@ -152,6 +147,7 @@ body {
 
 .timeframe:hover {
   cursor: pointer;
+  color: white;
 }
 
 .timeframe:active {
@@ -174,6 +170,11 @@ body {
   color: white;
   margin-top: 45px;
   border-radius: 15px;
+}
+
+.card-content__wrapper:hover {
+  background: var(--clr-neutral-desaturated-blue);
+  cursor: pointer;
 }
 
 .content-title__wrapper {
@@ -253,4 +254,9 @@ body {
     font-size: var(--fs-XL-mobile);
     font-weight: var(--fw-thin);
   }
+}
+
+/* utility styles */
+.active {
+  color: white;
 }
